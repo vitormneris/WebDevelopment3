@@ -10,9 +10,9 @@
 	<h1>Multiplication table</h1>
 	<%
 		//scriplet
-		int tab = Integer.parseInt(request.getParameter("txtTabuada"));
+		int var = Integer.parseInt(request.getParameter("value"));
 		for (int i = 0; i <= 10; i++) {
-			out.println(i + " * " + tab + " = "+ i * tab + "<br>");
+			out.println(i + " * " + var + " = "+ i * var + "<br>");
 		}
 	%>
 </body>
